@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>League of Legends Random Item Build</title>
+	</head>
+
+	<body>
+		<p>
+			<button onclick = "randomChamp();">Random Champion</button>
+			<button onclick = "randomBuild();">Random Build</button>
+			<button onclick = "randomSumm();">Random Summoner Spells</button>
+		</p>
+
+		<p>
+			<b>CHAMPION:</b>
+			<img id = "myChamp" src = "https://vignette.wikia.nocookie.net/phobia/images/e/e0/Red-Question-Mark.jpg/revision/latest?cb=20171108063335" width = "250" height = "250" alt = "champion">
+
+		</p>
+
+		<p>
+			<b>ITEM BUILD:</b>
+			<img id = "myBuild1" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+
+			<img id = "myBuild2" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+
+			<img id = "myBuild3" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+
+			<img id = "myBuild4" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+
+			<img id = "myBuild5" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+
+			<img id = "myBuild6" src = "http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" width = "100" height = "100" alt = "item">
+		</p>
+
+		<p>
+			<b>SUMMONER SPELLS:</b>
+			<img id = "summ1" src = "https://images7.alphacoders.com/438/thumb-1920-438352.jpg" width = "150" height = "150" alt = "summ">
+
+			<img id = "summ2" src = "https://images7.alphacoders.com/438/thumb-1920-438352.jpg" width = "150" height = "150" alt = "summ">
+
+		</p>
+
+		<script>
+
+			function randomChamp()
+			{
+				var myRNG = parseInt(Math.random() * 10);
+				console.log("Champ: " + myRNG);
+				if(myRNG == 0)
+				{
+					myAshe();
+				}
+				else if(myRNG == 1)
+				{
+					myBard();
+				}
+				else if(myRNG == 2)
+				{
+					myCaitlyn();
+				}
+				else if(myRNG == 3)
+				{
+					myCorki();
+				}
+				else if(myRNG == 4)
+				{
+					myEzreal();
+				}
+				else if(myRNG == 5)
+				{
+					myGangplank();
+				}
+				else if(myRNG == 6)
+				{
+					myGraves();
+				}
+				else if(myRNG == 7)
+				{
+					myJayce();
+				}
+				else if(myRNG == 8)
+				{
+					myKalista();
+				}
+				else if(myRNG == 9)
+				{
+					myKindred();
+				}
+				else 
+				{
+					console.log("Champs not working right");
+				}
+			}
+
+			function randomBuild()
+			{
+				var myRNG = parseInt(Math.random() * 10)
+				var myRNG2 = parseInt(Math.random() * 10)
+				var myRNG3 = parseInt(Math.random() * 10)
+				var myRNG4 = parseInt(Math.random() * 10)
+				var myRNG5 = parseInt(Math.random() * 10)
+				var myRNG6 = parseInt(Math.random() * 10)
+
+				console.log("Item 1: " + myRNG);
+				console.log("Item 2: " + myRNG2);
+				console.log("Item 3: " + myRNG3);
+				console.log("Item 4: " + myRNG4);
+				console.log("Item 5: " + myRNG5);
+				console.log("Item 6: " + myRNG6);
+
+				if(myRNG == 0)
+				{
+					myTri();
+				}
+				else if(myRNG == 1)
+				{
+					myBT();
+				}
+				else if(myRNG == 2)
+				{
+					myRage();
+				}
+				else if(myRNG == 3)
+				{
+					myDeathCap();
+				}
+				else if(myRNG == 4)
+				{
+					myBork();
+				}
+				else if(myRNG == 5)
+				{
+					myER();
+				}
+				else if(myRNG == 6)
+				{
+					myIE();
+				}
+				else if(myRNG == 7)
+				{
+					myDD();
+				}
+				else if(myRNG == 8)
+				{
+					myBC();
+				}
+				else if(myRNG == 9)
+				{
+					myMorello();
+				}
+				else
+				{
+					console.log("Item 1 not working right");
+				}
+
+				if(myRNG2 == 0)
+				{
+					myTri2();
+				}
+				else if(myRNG2 == 1)
+				{
+					myBT2();
+				}
+				else if(myRNG2 == 2)
+				{
+					myRage2();
+				}
+				else if(myRNG2 == 3)
+				{
+					myDeathCap2();
+				}
+				else if(myRNG2 == 4)
+				{
+					myBork2();
+				}
+				else if(myRNG2 == 5)
+				{
+					myER2();
+				}
+				else if(myRNG2 == 6)
+				{
+					myIE2();
+				}
+				else if(myRNG2 == 7)
+				{
+					myDD2();
+				}
+				else if(myRNG2 == 8)
+				{
+					myBC2();
+				}
+				else if(myRNG2 == 9)
+				{
+					myMorello2();
+				}
+				else
+				{
+					console.log("Item 2 not working right");
+				}
+
+				if(myRNG3 == 0)
+				{
+					myTri3();
+				}
+				else if(myRNG3 == 1)
+				{
+					myBT3();
+				}
+				else if(myRNG3 == 2)
+				{
+					myRage3();
+				}
+				else if(myRNG3 == 3)
+				{
+					myDeathCap3();
+				}
+				else if(myRNG3 == 4)
+				{
+					myBork3();
+				}
+				else if(myRNG3 == 5)
+				{
+					myER3();
+				}
+				else if(myRNG3 == 6)
+				{
+					myIE3();
+				}
+				else if(myRNG3 == 7)
+				{
+					myDD3();
+				}
+				else if(myRNG3 == 8)
+				{
+					myBC3();
+				}
+				else if(myRNG3 == 9)
+				{
+					myMorello3();
+				}
+				else
+				{
+					console.log("Item 3 not working right");
+				}
+
+				if(myRNG4 == 0)
+				{
+					myTri4();
+				}
+				else if(myRNG4 == 1)
+				{
+					myBT4();
+				}
+				else if(myRNG4 == 2)
+				{
+					myRage4();
+				}
+				else if(myRNG4 == 3)
+				{
+					myDeathCap4();
+				}
+				else if(myRNG4 == 4)
+				{
+					myBork4();
+				}
+				else if(myRNG4 == 5)
+				{
+					myER4();
+				}
+				else if(myRNG4 == 6)
+				{
+					myIE4();
+				}
+				else if(myRNG4 == 7)
+				{
+					myDD4();
+				}
+				else if(myRNG4 == 8)
+				{
+					myBC4();
+				}
+				else if(myRNG4 == 9)
+				{
+					myMorello4();
+				}
+				else
+				{
+					console.log("Item 4 not working right");
+				}
+
+				if(myRNG5 == 0)
+				{
+					myTri5();
+				}
+				else if(myRNG5 == 1)
+				{
+					myBT5();
+				}
+				else if(myRNG5 == 2)
+				{
+					myRage5();
+				}
+				else if(myRNG5 == 3)
+				{
+					myDeathCap5();
+				}
+				else if(myRNG5 == 4)
+				{
+					myBork5();
+				}
+				else if(myRNG5 == 5)
+				{
+					myER5();
+				}
+				else if(myRNG5 == 6)
+				{
+					myIE5();
+				}
+				else if(myRNG5 == 7)
+				{
+					myDD5();
+				}
+				else if(myRNG5 == 8)
+				{
+					myBC5();
+				}
+				else if(myRNG5 == 9)
+				{
+					myMorello5();
+				}
+				else
+				{
+					console.log("Item 5 not working right");
+				}
+
+				if(myRNG6 == 0)
+				{
+					myTri6();
+				}
+				else if(myRNG6 == 1)
+				{
+					myBT6();
+				}
+				else if(myRNG6 == 2)
+				{
+					myRage6();
+				}
+				else if(myRNG6 == 3)
+				{
+					myDeathCap6();
+				}
+				else if(myRNG6 == 4)
+				{
+					myBork6();
+				}
+				else if(myRNG6 == 5)
+				{
+					myER6();
+				}
+				else if(myRNG6 == 6)
+				{
+					myIE6();
+				}
+				else if(myRNG6 == 7)
+				{
+					myDD6();
+				}
+				else if(myRNG6 == 8)
+				{
+					myBC6();
+				}
+				else if(myRNG6 == 9)
+				{
+					myMorello6();
+				}
+				else
+				{
+					console.log("Item 6 not working right");
+				}
+			}
+
+			function randomSumm()
+			{
+				var myRNG = parseInt(Math.random() * 9)
+				var myRNG2 = parseInt(Math.random() * 9)
+
+				while(myRNG == myRNG2)
+				{
+					myRNG2 = parseInt(Math.random() * 9);
+				}
+
+				console.log("Summoner 1: " + myRNG);
+				console.log("Summoner 2: " + myRNG2);
+
+				if(myRNG == 0)
+				{
+					myGhost();
+				}
+				else if(myRNG == 1)
+				{
+					myHeal();
+				}
+				else if(myRNG == 2)
+				{
+					myCleanse();
+				}
+				else if(myRNG == 3)
+				{
+					myTeleport();
+				}
+				else if(myRNG == 4)
+				{
+					mySmite();
+				}
+				else if(myRNG == 5)
+				{
+					myBarrier();
+				}
+				else if(myRNG == 6)
+				{
+					myIgnite();
+				}
+				else if(myRNG == 7)
+				{
+					myExhaust();
+				}
+				else if(myRNG == 8)
+				{
+					myFlash();
+				}
+				else
+				{
+					console.log("Summ1 not working right");
+				}
+
+				if(myRNG2 == 0)
+				{
+					myGhost2();
+				}
+				else if(myRNG2 == 1)
+				{
+					myHeal2();
+				}
+				else if(myRNG2 == 2)
+				{
+					myCleanse2();
+				}
+				else if(myRNG2 == 3)
+				{
+					myTeleport2();
+				}
+				else if(myRNG2 == 4)
+				{
+					mySmite2();
+				}
+				else if(myRNG2 == 5)
+				{
+					myBarrier2();
+				}
+				else if(myRNG2 == 6)
+				{
+					myIgnite2();
+				}
+				else if(myRNG2 == 7)
+				{
+					myExhaust2();
+				}
+				else if(myRNG2 == 8)
+				{
+					myFlash2();
+				}
+				else
+				{
+					console.log("Summ2 not working right");
+				}
+			}
+
+			//Champions Functions
+			function myAshe()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4a/AsheSquare.png/revision/latest?cb=20150402215403";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Ashe";
+			}
+
+			function myBard()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://yt3.ggpht.com/-LFzJZLXOSXY/AAAAAAAAAAI/AAAAAAAAAAA/dfnHezMU7bw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Bard";
+			}
+
+			function myCaitlyn()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://www.lol.social/media/social/avatars/page/15/aa51f8b17eceb81f22049284e4a5d860_square.png";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Caitlyn";
+			}
+
+			function myCorki()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://lh3.googleusercontent.com/-mG2Gej-K7lo/AAAAAAAAAAI/AAAAAAAAABI/IH1byN9Vfmw/s640/photo.jpg";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Corki";
+			}
+
+			function myEzreal()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://vignette.wikia.nocookie.net/league-of-carries/images/1/1f/Ezreal_Square_01.png/revision/latest?cb=20151023085823";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Ezreal";
+			}
+
+			function myGangplank()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://vignette.wikia.nocookie.net/vsbattles/images/f/f2/Gangplank_square.png/revision/latest?cb=20150807190329";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Gangplank";
+			}
+
+			function myGraves()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "http://elohell.net/public/champions/avatar/Graves_Square_01.png";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Graves";
+			}
+
+			function myJayce()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "http://forums.na.leagueoflegends.com/board/attachment.php?attachmentid=888693";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Jayce";
+			}
+
+			function myKalista()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://lh3.googleusercontent.com/-z8KAW71gcDc/VUluwZ9TssI/AAAAAAAAAx4/DWAFJ7fdEYY/w506-h750/Kalista_Square_01.png";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Kalista";
+			}
+
+			function myKindred()
+			{
+				var myImage = document.getElementById('myChamp');
+				myImage.src = "https://pm1.narvii.com/5886/1b6971295a8e84c40f76e227744e126740ca1168_hq.jpg";
+				myImage.style.width = '250px';
+				myImage.style.height = '250px';
+				myImage.alt = "Kindred";
+			}
+
+			//Summoner 1 Functions
+			function myGhost()
+			{
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://cdn.theenemy.com.br/jmh9E5HhFuY2m9r5Etm4DdcQU5c=/770x0/smart/media/uploads/conteudo/fotos/fantasma-thumb2.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Ghost";
+			}
+
+			function myHeal()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://cdn.theenemy.com.br/sOzIeAteYgL7fKOFJNbHRJtIlzY=/770x0/smart/media/uploads/conteudo/fotos/curar-thumb.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Heal";
+			}
+
+			function myCleanse()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/95/Cleanse.png/revision/latest?cb=20140115125907";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Cleanse";
+			}
+
+			function myTeleport()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://pm1.narvii.com/6406/fd15afd62e10c03961166ffaf1e9c0c25695403a_hq.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Teleport";
+			}
+
+			function mySmite()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://choualbox.com/Img/141692498458.png";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Smite";
+			}
+
+			function myBarrier()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "http://c-8oqtgrjgwu46x24x78kipgvvgx2eykmkcx2epqeqqmkgx2epgv.g00.wikia.com/g00/3_c-8ngciwgqhngigpfu.ykmkc.eqo_/c-8OQTGRJGWU46x24jvvrux3ax2fx2fx78kipgvvg.ykmkc.pqeqqmkg.pgvx2fngciwgqhngigpfux2fkocigux2fex2feex2fDcttkgt.rpix2ftgx78kukqpx2fncvguvx3fedx3d42362337347862x26k32e.octm.kocig.varg_$/$/$/$/$/$/$/$";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Barrier";
+			}
+
+			function myIgnite()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "http://pm1.narvii.com/5792/0ce6cda7883a814a1a1e93efa05184543982a1e4_hq.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Ignite";
+			}
+
+			function myExhaust()
+			{
+
+				var myImage = document.getElementById('summ1');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4a/Exhaust.png/revision/latest?cb=20111115121116";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Exhaust";
+			}
+
+			function myFlash()
+			{
+				var myImage = document.getElementById('summ1');
+				myImage.src = "http://gamehubs.com/media/2017/03/flash.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Flash";
+
+			}
+
+			//Summoner 2 Functions
+			function myGhost2()
+			{
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://cdn.theenemy.com.br/jmh9E5HhFuY2m9r5Etm4DdcQU5c=/770x0/smart/media/uploads/conteudo/fotos/fantasma-thumb2.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Ghost";
+			}
+
+			function myHeal2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://cdn.theenemy.com.br/sOzIeAteYgL7fKOFJNbHRJtIlzY=/770x0/smart/media/uploads/conteudo/fotos/curar-thumb.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Heal";
+			}
+
+			function myCleanse2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/95/Cleanse.png/revision/latest?cb=20140115125907";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Cleanse";
+			}
+
+			function myTeleport2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://pm1.narvii.com/6406/fd15afd62e10c03961166ffaf1e9c0c25695403a_hq.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Teleport";
+			}
+
+			function mySmite2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://choualbox.com/Img/141692498458.png";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Smite";
+			}
+
+			function myBarrier2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "http://c-8oqtgrjgwu46x24x78kipgvvgx2eykmkcx2epqeqqmkgx2epgv.g00.wikia.com/g00/3_c-8ngciwgqhngigpfu.ykmkc.eqo_/c-8OQTGRJGWU46x24jvvrux3ax2fx2fx78kipgvvg.ykmkc.pqeqqmkg.pgvx2fngciwgqhngigpfux2fkocigux2fex2feex2fDcttkgt.rpix2ftgx78kukqpx2fncvguvx3fedx3d42362337347862x26k32e.octm.kocig.varg_$/$/$/$/$/$/$/$";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Barrier";
+			}
+
+			function myIgnite2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "http://pm1.narvii.com/5792/0ce6cda7883a814a1a1e93efa05184543982a1e4_hq.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Ignite";
+			}
+
+			function myExhaust2()
+			{
+
+				var myImage = document.getElementById('summ2');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4a/Exhaust.png/revision/latest?cb=20111115121116";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Exhaust";
+			}
+
+			function myFlash2()
+			{
+				var myImage = document.getElementById('summ2');
+				myImage.src = "http://gamehubs.com/media/2017/03/flash.jpg";
+				myImage.style.width = '150px';
+				myImage.style.height = '150px';
+				myImage.alt = "Flash";
+
+			}
+
+			//Item 1 functions
+			function myTri()
+			{
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello()
+			{
+
+				var myImage = document.getElementById('myBuild1');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+
+			//Item 2 functions
+			function myTri2()
+			{
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello2()
+			{
+
+				var myImage = document.getElementById('myBuild2');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+
+			//Item 3 functions
+			function myTri3()
+			{
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello3()
+			{
+
+				var myImage = document.getElementById('myBuild3');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+
+			//Item 4 functions
+			function myTri4()
+			{
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello4()
+			{
+
+				var myImage = document.getElementById('myBuild4');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+
+			//Item 5 functions
+			function myTri5()
+			{
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello5()
+			{
+
+				var myImage = document.getElementById('myBuild5');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+
+			//Item 6 functions
+			function myTri6()
+			{
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://assets.podomatic.net/ts/67/92/b2/feedback61889/300x300_5260143.gif?1414771153";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Trinity Force";
+			}
+
+			function myBT6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://i.ytimg.com/vi/cPOAeZD6Yvk/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Bloodthirster";
+			}
+
+			function myRage6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://i.ytimg.com/vi/22Ux5wZwdnc/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Rageblade";
+			}
+
+			function myDeathCap6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c5/Rabadon%27s_Deathcap_item.png/revision/latest?cb=20130319091242";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Deathcap";
+			}
+
+			function myBork6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://img00.deviantart.net/5d4a/i/2015/234/7/f/blade_of_the_ruined_king_by_ahri_chan-d96o6c1.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Blade of the Ruined King";
+			}
+
+			function myER6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://pm1.narvii.com/5947/7d1d64b1d3c4ccbf2ded95fe804b9bba08e885ae_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Essence Reaver";
+			}
+
+			function myIE6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://i.ytimg.com/vi/Nq6vPOh-3JI/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Infinity Edge";
+			}
+
+			function myDD6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://i.ytimg.com/vi/vvKUL9VbMbw/hqdefault.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Death's Dance";
+			}
+
+			function myBC6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://vignette.wikia.nocookie.net/leagueoflegends/images/9/98/The_Black_Cleaver_item.png";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Black Cleaver";
+			}
+
+			function myMorello6()
+			{
+
+				var myImage = document.getElementById('myBuild6');
+				myImage.src = "https://pm1.narvii.com/6382/75edd6c7ba044758051498295208a1f2db2213c4_hq.jpg";
+				myImage.style.width = '100px';
+				myImage.style.height = '100px';
+				myImage.alt = "Morellonomicon";
+			}
+		</script>
+	</body>
+</html>
